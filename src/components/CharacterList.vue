@@ -1,16 +1,23 @@
-<template>
+<template lang="html">
   <div>
       <ul>
-          <list-item 
+          <character-select v-for="(character, index) in characters" :character="character" :key="index"></character-select>
       </ul>
+  </div>
 </template>
 
 <script>
-export default {
+import CharacterSelect from './CharacterSelect.vue'
 
+export default {
+  name: 'character-list',
+  props: ['characters'],
+  components: { 
+      "character-select": CharacterSelect 
+  }
 }
 </script>
 
-<style>
+<style lang="css" scoped>
 
 </style>
