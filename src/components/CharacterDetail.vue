@@ -1,4 +1,5 @@
 <template lang="html">
+
   <div v-if="character">
       <h3> {{character.name}}</h3>
       <p> Species: {{character.species}}</p>
@@ -7,6 +8,7 @@
   <div v-else>
       <p>Please choose a character</p>
   </div>
+
 </template>
 
 <script>

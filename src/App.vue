@@ -2,7 +2,7 @@
   <div>
     <h1> Characters</h1>
     <div class="main-container">
-      <character-list :characters='characters'></character-list>
+      <character-list :characters='characters' :selectedCharacter='selectedCharacter'></character-list>
       <character-detail :character='selectedCharacter'></character-detail>
     </div>
   </div>
